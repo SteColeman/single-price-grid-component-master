@@ -1,5 +1,4 @@
 /* Grid Layout */
-
 .container {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -15,7 +14,7 @@ body {
 }
 
 h1 {
-color: hsl(179, 62%, 43%);
+  color: hsl(179, 62%, 43%);
 }
 
 h4 {
@@ -54,8 +53,8 @@ h4 {
 }
 
 .grey {
-color: hsl(204, 43%, 93%);
-font-size: 14px;
+  color: hsl(204, 43%, 93%);
+  font-size: 14px;
 }
 
 button {
@@ -63,18 +62,14 @@ button {
   width: 260px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
 }
 
 .why {
   background-color: hsl(179, 46%, 53%);
   color: white;
-}
-
-button {
-  background-color: hsl(71, 73%, 54%);
-  color: white;
-
 }
 
 ul {
@@ -85,13 +80,57 @@ ul {
 }
 
 ul li {
-color: hsl(204, 43%, 93%);
+  color: hsl(204, 43%, 93%);
 }
 
 /* Footer Attributes */
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
-.attribution a
-{ color: hsl(228, 45%, 44%);
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 960px) {
+
+  body {
+    margin-top: 7rem;
+  }
+
+  .container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 45%;
+    box-shadow: ;
+  }
+
+  .join {
+    grid-column: 1/ span 2;
+    border-radius: 5px 5px 0 0;
+  }
+
+  button {
+    width: 220px;
+    height: 2.5rem;
+  }
+
+  .subscription {
+    grid-column: 1/ span 1;
+    border-bottom-left-radius: 5px;
+    padding: 1.5rem;
+  }
+
+  .why {
+    border-bottom-right-radius: 5px;
+    grid-column: 2/ span 1;
+    padding: 1.5rem;
+    font-size: 14px;
+  }
+
+  .why p {
+    font-size: 10px;
+    color: hsl(204, 43%, 93%);
+  }
 }
