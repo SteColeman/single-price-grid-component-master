@@ -1,0 +1,97 @@
+/* Grid Layout */
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 85vw;
+  margin: 3rem auto;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+color: hsl(179, 62%, 43%);
+}
+
+h4 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 400;
+}
+
+.join, .subscription, .why {
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.join p {
+  color: hsl(218, 22%, 67%);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.join {
+  background-color: white;
+}
+
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+}
+
+.subscription p {
+  margin-top: 0;
+  color: hsl(204, 43%, 93%);
+}
+
+.price {
+  font-size: 32px;
+}
+
+.grey {
+color: hsl(204, 43%, 93%);
+font-size: 14px;
+}
+
+button {
+  height: 50px;
+  width: 260px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.why {
+  background-color: hsl(179, 46%, 53%);
+  color: white;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+
+}
+
+ul {
+  list-style: none;
+  color: hsl(204, 43%, 93%);
+  padding-left: 0;
+  font-size: 14px;
+}
+
+ul li {
+color: hsl(204, 43%, 93%);
+}
+
+/* Footer Attributes */
+.attribution {
+  font-size: 11px; text-align: center;
+}
+.attribution a
+{ color: hsl(228, 45%, 44%);
+}
